@@ -10,7 +10,7 @@ loadnvm() {
 }
 
 loadnvm_hook() {
-  local splitted=(${(@s/ /)1})
+  local splitted=(${(@s/ /)2})
   local first=$splitted[1]
   if ! type "$first" > /dev/null; then
     loadnvm
